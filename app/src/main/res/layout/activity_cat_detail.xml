@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/DarkPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/catImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cat_placeholder_background"
+    android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/catNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Cat Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/catImageView"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/catDescriptionTextView"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cat Description"
+        android:layout_below="@id/catNameTextView"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/catPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Price: $0"
+        android:textSize="18sp"
+        android:layout_below="@id/catDescriptionTextView"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:layout_below="@id/catPriceTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Add to cart"
+        android:layout_below="@id/quantityEditText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/DarkPrimary"/>
+
+</RelativeLayout>

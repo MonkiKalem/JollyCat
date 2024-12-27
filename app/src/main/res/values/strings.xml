@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JollyCat</string>
+    <string name="price_format">Price: Rp %1$,d</string>
+    <string name="subtotal_format">Subtotal: Rp %1$,d</string>
+</resources>
